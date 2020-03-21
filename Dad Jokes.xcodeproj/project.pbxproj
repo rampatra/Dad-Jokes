@@ -14,6 +14,10 @@
 		C4D965A32424D80F00D48B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D965A22424D80F00D48B2A /* Assets.xcassets */; };
 		C4D965A62424D80F00D48B2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D965A52424D80F00D48B2A /* Preview Assets.xcassets */; };
 		C4D965A92424D80F00D48B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D965A72424D80F00D48B2A /* LaunchScreen.storyboard */; };
+		C4D965B12424ED5900D48B2A /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D965B02424ED5900D48B2A /* EmojiView.swift */; };
+		C4D965B82424F4D100D48B2A /* Joke+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D965B62424F4D100D48B2A /* Joke+CoreDataClass.swift */; };
+		C4D965B92424F4D100D48B2A /* Joke+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D965B72424F4D100D48B2A /* Joke+CoreDataProperties.swift */; };
+		C4D965BB2424F87400D48B2A /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D965BA2424F87400D48B2A /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		C4D965A52424D80F00D48B2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4D965A82424D80F00D48B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4D965AA2424D80F00D48B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D965B02424ED5900D48B2A /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		C4D965B62424F4D100D48B2A /* Joke+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Joke+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C4D965B72424F4D100D48B2A /* Joke+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Joke+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4D965BA2424F87400D48B2A /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		C4D965BE2425654400D48B2A /* Dad Jokes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dad Jokes.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 		C4D9658D2424D80E00D48B2A = {
 			isa = PBXGroup;
 			children = (
+				C4D965B02424ED5900D48B2A /* EmojiView.swift */,
 				C4D965982424D80E00D48B2A /* Dad Jokes */,
 				C4D965972424D80E00D48B2A /* Products */,
 			);
@@ -58,9 +68,13 @@
 		C4D965982424D80E00D48B2A /* Dad Jokes */ = {
 			isa = PBXGroup;
 			children = (
+				C4D965BE2425654400D48B2A /* Dad Jokes.entitlements */,
+				C4D965B62424F4D100D48B2A /* Joke+CoreDataClass.swift */,
+				C4D965B72424F4D100D48B2A /* Joke+CoreDataProperties.swift */,
 				C4D965992424D80E00D48B2A /* AppDelegate.swift */,
 				C4D9659B2424D80E00D48B2A /* SceneDelegate.swift */,
 				C4D965A02424D80E00D48B2A /* ContentView.swift */,
+				C4D965BA2424F87400D48B2A /* AddView.swift */,
 				C4D965A22424D80F00D48B2A /* Assets.xcassets */,
 				C4D965A72424D80F00D48B2A /* LaunchScreen.storyboard */,
 				C4D965AA2424D80F00D48B2A /* Info.plist */,
@@ -149,10 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D965B82424F4D100D48B2A /* Joke+CoreDataClass.swift in Sources */,
 				C4D9659A2424D80E00D48B2A /* AppDelegate.swift in Sources */,
 				C4D9659F2424D80E00D48B2A /* Dad_Jokes.xcdatamodeld in Sources */,
 				C4D965A12424D80E00D48B2A /* ContentView.swift in Sources */,
 				C4D9659C2424D80E00D48B2A /* SceneDelegate.swift in Sources */,
+				C4D965BB2424F87400D48B2A /* AddView.swift in Sources */,
+				C4D965B12424ED5900D48B2A /* EmojiView.swift in Sources */,
+				C4D965B92424F4D100D48B2A /* Joke+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dad Jokes/Dad Jokes.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dad Jokes/Preview Content\"";
 				DEVELOPMENT_TEAM = 2X2HSNJC5T;
@@ -299,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rampatra.Dad-Jokes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dad Jokes/Dad Jokes.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dad Jokes/Preview Content\"";
 				DEVELOPMENT_TEAM = 2X2HSNJC5T;
@@ -319,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rampatra.Dad-Jokes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
